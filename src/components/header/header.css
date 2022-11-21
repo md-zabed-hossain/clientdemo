@@ -1,0 +1,35 @@
+.header {
+  position: relative;
+  width: 100vw;
+  height: 781px;
+  background-image: url("../../assets/home1.png");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  
+}
+.header::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 781px;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.main {
+  position: absolute;
+  width: 200px;
+  height: 222.02px;
+  left: 45%;
+  top: 50%;
+  z-index: 5;
+}
+.logo {
+  width: 200px;
+  height: 166.02px;
+  background-image: url("../../assets/Logo.png");
+  border: none;
+  outline: none;
+}

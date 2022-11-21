@@ -1,0 +1,14 @@
+.myst{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background-color: #000;
+}
+.myst>a{
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    left: 50ox;
+    top: 50px;
+}

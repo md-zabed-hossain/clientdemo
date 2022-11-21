@@ -1,0 +1,32 @@
+.navbar {
+  color: #fff;
+  /* background: rgba(255,255,255,0.1); */
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+ul > a {
+  width: 35px;
+  height: 24px;
+
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+  z-index: 100;
+}
+.main__nav {
+  position: absolute;
+  width: 400px;
+  height: 60px;
+}
+.logo__nav {
+  width: 70px;
+  height: 60px;
+ 
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

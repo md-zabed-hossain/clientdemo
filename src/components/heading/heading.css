@@ -1,0 +1,89 @@
+.heading {
+  position: relative;
+  height: 658px;
+  width: 100vw;
+  background: #000000;
+}
+
+h1 {
+  position: absolute;
+  width: 849px;
+  height: 142px;
+  left: 20%;
+  top: 169px;
+
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100%;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.main__lore {
+  position: absolute;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  width: 800px;
+  height: auto;
+  left: 25%;
+  /* top: 50%; */
+  color: #ffffff;
+}
+.lore__heading {
+ 
+  width: 416px;
+  height: 224px;
+ 
+}
+.lore__heading>h2{
+  width: 352px;
+height: 224px;
+
+font-family: 'Anton';
+font-style: normal;
+font-weight: 400;
+font-size: 56px;
+line-height: 100%;
+
+letter-spacing: -0.02em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+align-self: stretch;
+
+}
+.lore__text{
+
+width: 416px;
+height: auto;
+
+}
+.lore__text>p{
+  
+width: 352px;
+height: auto;
+margin: 10px;
+padding: 10px;
+
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+/* line-height: 160%; */
+
+
+color: #FFFFFF;
+
+
+align-self: stretch;
+
+}
