@@ -2,6 +2,7 @@ import React from "react";
 import "./wall.css";
 import home3 from "../../assets/home3.png";
 import lore2 from "../../assets/lore2.jpg";
+import { Link } from "react-router-dom";
 
 const wallCardData = [
   {
@@ -52,10 +53,12 @@ const WallSec = (page) => {
         <h3>Something is brewing. Embrace the Myst, uncover your inner potential. ascend.</h3>
       ) : <div className="wall__footer-heading flex flex-col">
           <h2 className=" mb-10">Inhale the MYst.</h2>
-          <a href="/">Discover</a>
+          <Link to={"/myst"}>Discover</Link>
+          
         </div>}
     </>
   );
 };
 
 export default WallSec;
+
