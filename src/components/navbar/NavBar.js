@@ -20,16 +20,16 @@ const NavBar = () => {
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <a href="/lore" className="flex items-center">
+      <Link to={"/lore"} className="flex items-center">
         Lore
-      </a>
-      <a href="/gallery" className="flex items-center">
+      </Link>
+      <Link to={"/gallery"} className="flex items-center">
         Gallery
-      </a>
+      </Link>
 
-      <a href="/roadmap" className="flex items-center">
+      <Link to={"/roadmap"} className="flex items-center">
         Roadmap
-      </a>
+      </Link>
     </ul>
   );
   // if(page.page === "home"){
