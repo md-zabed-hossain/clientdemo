@@ -5,6 +5,7 @@ import home2 from "../../assets/home2.png";
 import lore1 from "../../assets/lore1.jpg";
 
 import { images } from "../../assets";
+import { Link } from "react-router-dom";
 
 const expCardData = [
   {
@@ -79,9 +80,9 @@ const ExploreSec = (page) => {
                 facilisi mauris venenatis est auctor eu. Tellus diam eu ac, nec
                 tortor porta lobortis aliquet. Ultrices lorem gravida ut lorem.
               </p>
-              <a href="/" className="mt-50">
+              <Link to={"/gallery"} className="mt-50">
                 Browse Collection
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex explore__card">

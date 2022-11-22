@@ -51,8 +51,8 @@ const NavBar = () => {
 </div>)
 
   return (
-    <Navbar className="mx-auto  py-2 px-4 lg:py-4 navbar ">
-      <div className="container mx-auto flex items-center justify-between text-blue-gray-900 bg-transparent ">
+    <Navbar className="  py-2 px-4 lg:py-4 navbar bg-transparent ">
+      <div className="  flex items-center justify-between text-blue-gray-900 bg-transparent ">
      {homeIcon}
      <div className="hidden lg:block">{navList}</div>
         
