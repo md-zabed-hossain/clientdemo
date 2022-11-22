@@ -1,7 +1,7 @@
 import React from 'react'
 import CardUI from './CardUI'
 import './galleryCard.css'
-import GalleryCardData from "./galleryCardData.js"
+// import GalleryCardData from "./galleryCardData.js"
 
 const GalleryCard = () => {
   return (

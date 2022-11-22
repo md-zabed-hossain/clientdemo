@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./galleryCard.css";
 import GalleryCardData from "./galleryCardData.js";
-import { Button, Card } from "@material-tailwind/react";
+import {  Card } from "@material-tailwind/react";
 import GalleryCardDialog from "./GalleryCardDialog";
 
 const CardUI = () => {

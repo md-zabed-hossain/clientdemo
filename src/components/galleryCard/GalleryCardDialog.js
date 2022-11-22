@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Dialog } from "@material-tailwind/react";
 import GalleryCardData from "./galleryCardData.js";
-import close from "../../assets/close.png"
+
 
 const GalleryCardDialog = (props) => {
   // const [open, setOpen] = useState(props.open);
