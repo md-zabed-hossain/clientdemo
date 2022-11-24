@@ -43,16 +43,16 @@ const NavBar = () => {
   // </div>)
 
   // }
-  const homeIcon = (<div className="flex">
-  <div className="flex items-center main__nav p-0 gap-8">
+  const homeIcon = (<div>
+  <div className="flex justify-center items-center main__nav p-0 mb-5 gap-8">
     <Link to="/"><img src={Logonav} alt="" className="logo__nav"/></Link>
     <SocialIcon />
   </div>
 </div>)
 
   return (
-    <Navbar className="  py-2 px-4 lg:py-4 navbar bg-transparent ">
-      <div className="  flex items-center justify-between text-blue-gray-900 bg-transparent ">
+    <Navbar className="py-2 px-4 lg:py-4 navbar bg-transparent ">
+      <div className=" flex  items-center justify-between text-blue-gray-900 bg-transparent ">
      {homeIcon}
      <div className="hidden lg:block">{navList}</div>
         

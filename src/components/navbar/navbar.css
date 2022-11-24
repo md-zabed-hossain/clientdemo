@@ -1,9 +1,10 @@
 .navbar {
   color: #fff;
-  /* background: rgba(255,255,255,0.1); */
+  background: rgba(255,255,255,0.1);
   width: 100vw;
   z-index: 100;
   position: fixed;
+  border: none;
 }
 ul > a {
   width: 35px;
@@ -19,12 +20,13 @@ ul > a {
 }
 .main__nav {
   position: absolute;
+  
   width: 400px;
-  height: 60px;
+  height: auto;
 }
 .logo__nav {
-  width: 70px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
  
   border: none;
   outline: none;

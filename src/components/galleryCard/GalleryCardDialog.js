@@ -13,21 +13,21 @@ const GalleryCardDialog = (props) => {
       var dialogData = 
        ( <div className="flex">
           <img src={GalleryCardData[x].img} alt=""/>
-          <div>
+          <div className="flex flex-wrap">
           <span>sea</span>
           <h4>{GalleryCardData[x].id}</h4>
-          <p>{GalleryCardData[x].desc}</p>
-          <span>{GalleryCardData[x].style}</span>
-          <span>{GalleryCardData[x].special}</span>
-          <span>{GalleryCardData[x].clothing}</span>
-          <span>{GalleryCardData[x].head}</span>
-          <span>{GalleryCardData[x].hand}</span>
-          <span>{GalleryCardData[x].neck}</span>
-          <span>{GalleryCardData[x].face}</span>
-          <span>{GalleryCardData[x].eyes}</span>
-          <span>{GalleryCardData[x].ears}</span>
-          <span>{GalleryCardData[x].mouth}</span>
-          <span>{GalleryCardData[x].background}</span>
+          <p>{GalleryCardData[x].desc.toUpperCase()}</p>
+          <>{GalleryCardData[x].style.map((item,i)=>(<span key={i}>{item.toUpperCase()}</span>))}</>
+          <span>{GalleryCardData[x].special.map((item,i)=>(<span key={i}>{item.toUpperCase()}</span>))}</span>
+          <span>{GalleryCardData[x].clothing.map((item,i)=>(<span key={i}>{item.toUpperCase()}</span>))}</span>
+          <span>{GalleryCardData[x].head.map((item,i)=>(<span key={i}>{item.toUpperCase()}</span>))}</span>
+          <span>{GalleryCardData[x].hand.map((item,i)=>(<span key={i}>{item.toUpperCase()}</span>))}</span>
+          <span>{GalleryCardData[x].neck.map((item,i)=>(<span key={i}>{item.toUpperCase()}</span>))}</span>
+          <span>{GalleryCardData[x].face.map((item,i)=>(<span key={i}>{item.toUpperCase()}</span>))}</span>
+          <span>{GalleryCardData[x].eyes.map((item,i)=>(<span key={i}>{item.toUpperCase()}</span>))}</span>
+          <span>{GalleryCardData[x].ears.map((item,i)=>(<span key={i}>{item.toUpperCase()}</span>))}</span>
+          <span>{GalleryCardData[x].mouth.map((item,i)=>(<span key={i}>{item.toUpperCase()}</span>))}</span>
+          <span>{GalleryCardData[x].background.map((item,i)=>(<span key={i}>{item.toUpperCase()}</span>))}</span>
           </div>
         </div>)
    ;
