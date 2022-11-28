@@ -25,37 +25,37 @@ const Myst = () => {
             Flood your mind. You see Asia, you see people. you see life.
           </p>
         </div>
-        <div class="parent m-20 p-10">
-          <div class="div1">
+        <div className="parent m-20 p-10">
+          <div className="div1">
             <img src={myst1} alt="" />
           </div>
-          <div class="div2">
+          <div className="div2">
             <img src={myst2} alt="" />
           </div>
-          <div class="div3">
+          <div className="div3">
             <img src={myst3} alt="" />
           </div>
-          <div class="div4">
+          <div className="div4">
             <img src={myst4} alt="" />
           </div>
-          <div class="div5">
+          <div className="div5">
             <img src={myst5} alt="" />
           </div>
         </div>
-        <div class="parent m-20 p-10">
-          <div class="div1">
+        <div className="parent m-20 p-10">
+          <div className="div1">
             <img src={myst6} alt="" />
           </div>
-          <div class="div2">
+          <div className="div2">
             <img src={myst2} alt="" />
           </div>
-          <div class="div3">
+          <div className="div3">
             <img src={myst3} alt="" />
           </div>
-          <div class="div4">
+          <div className="div4">
             <img src={myst4} alt="" />
           </div>
-          <div class="div5">
+          <div className="div5">
             <img src={myst5} alt="" />
           </div>
         </div>

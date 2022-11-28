@@ -8,8 +8,8 @@ import "./gallery.css";
 const Gallery = () => {
   return (
     <>
-      <div className="gallery">
-        <div className="flex gap-10 m-[185px]">
+      <div className="gallery ">
+        <div className="flex gap-10 m-[150px]">
           <div className="flex flex-col fixed left-5 gap-20 items-center">
             <h2>Gallery</h2>
             <div>

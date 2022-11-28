@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer, useEffect } from "react";
+import { createContext, useContext, useReducer, useEffect} from "react";
 import reducer from "./filterReducer";
 import GalleryCardData from "../galleryCard/galleryCardData";
 
@@ -9,37 +9,53 @@ const initialState = {
   all_data: GalleryCardData,
   filters: {
     text: "",
+    style: [],
     special: [],
+    clothing: [],
+    head: [],
+    hand: [],
+    neck: [],
+    face: [],
+    eyes: [],
+    ears: [],
+    mouth: [],
+    background: [],
   },
 };
 
 export const FilterContextProvider = ({ children }) => {
+
   const [state, dispatch] = useReducer(reducer, initialState);
+  
 
   // update the filter values
   const updateFilterValue = (event) => {
-    let name = event.target.name;
-    let value = event.target.value;
+    let { name, value} = event.target;
+
     return dispatch({ type: "UPDATE_FILTERS_VALUE", payload: { name, value } });
   };
-    // update the checked filter values
-    const updateCheckedFilterValue = (event) => {
-      let {name,value,checked,type} = event.target;
-      // let value = event.target.value;
-      // let checked = event.target.checked;
-      console.log(name,value,checked,type)
   
-      // return dispatch({ type: "UPDATE_FILTERS_VALUE", payload: { name, value } });
-    };
+   // update the checked filter values
+ const updateCheckedFilterValue = (event) => {
+    let { name, value, checked } = event.target;
 
-  // to sort the product
+    return dispatch({ type: "UPDATE_CHECKED_FILTERS_VALUE", payload: { name,value,checked }});
+  };
+  
+  // to clear the filter
+  const clearFilters = (event) => {   
+    dispatch({ type: "CLEAR_FILTERS" });
+  };
+  
+  
+  // to sort the data
   useEffect(() => {
-    dispatch({ type: "FILTER_PRODUCTS" });
-    // dispatch({ type: "LOAD_FILTER_DATA"});
+    dispatch({ type: "FILTER_DATA" });
   }, [state.filters]);
-  // to load all the products for grid and list view
+  // to load all the data for grid and list view
   useEffect(() => {
     dispatch({ type: "LOAD_FILTER_DATA"});
+  
   }, []);
   return (
     <FilterContext.Provider
@@ -47,6 +63,7 @@ export const FilterContextProvider = ({ children }) => {
         ...state,
         updateFilterValue,
         updateCheckedFilterValue,
+        clearFilters,
       }}
     >
       {children}

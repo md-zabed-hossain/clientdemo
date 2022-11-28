@@ -9,7 +9,6 @@ const CardUI = () => {
   const [open, setOpen] = useState(false);
   const {
     filter_data,
-   
   } = useFilterContext();
 
   const handleOpen = () => setOpen(!open);
