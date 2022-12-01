@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -10,12 +11,11 @@
 html{
   scroll-behavior: smooth;
 }
-body{
-}
+
 .App {
-  /* overflow: hidden; */
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
   align-items: center;
   text-align: center;
   display: flex;

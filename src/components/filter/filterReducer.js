@@ -1,5 +1,11 @@
 const filterReducer = (state, action) => {
   switch (action.type) {
+    case "HANDLE_PAGE":
+      const page = action.payload;
+      return{
+        ...state,
+        page : page
+      };
     case "LOAD_FILTER_DATA":
       return {
         ...state,
@@ -226,7 +232,7 @@ const filterReducer = (state, action) => {
        })
         
       }
-
+      tempFilterData.flat();
       return {
         ...state,
         filter_data: tempFilterData,

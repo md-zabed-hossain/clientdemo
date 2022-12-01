@@ -86,7 +86,7 @@ const Filter = () => {
        
         <h3>FILTERS ({filter_data.length})</h3>
       </>
-      <form onSubmit={(e) => e.preventDefault() }>
+      <form onSubmit={(e) => e.preventDefault() } className='clearForm'>
         <input
           className="text-black"
           type="text"
@@ -107,7 +107,7 @@ const Filter = () => {
           Style
         </AccordionHeader>
         <AccordionBody>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='clearForm'>
         {styleData.map((curStyle  , i) => {
           return (
             <div key={i}>
@@ -135,7 +135,7 @@ const Filter = () => {
           Special
         </AccordionHeader>
         <AccordionBody>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='clearForm'>
         {specialData.map((curSpecial, i) => {
           return (
             <div key={i}>
@@ -163,7 +163,7 @@ const Filter = () => {
         Clothing
         </AccordionHeader>
         <AccordionBody>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='clearForm'>
         {clothingData.map((curClothing, i) => {
           return (
             <div key={i}>
@@ -191,7 +191,7 @@ const Filter = () => {
         Head
         </AccordionHeader>
         <AccordionBody>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='clearForm'>
         {headData.map((curHead, i) => {
           return (
             <div key={i}>
@@ -219,7 +219,7 @@ const Filter = () => {
         Hand
         </AccordionHeader>
         <AccordionBody>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='clearForm'>
         {handData.map((curHand, i) => {
           return (
             <div key={i}>
@@ -247,7 +247,7 @@ const Filter = () => {
         Neck
         </AccordionHeader>
         <AccordionBody>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='clearForm'>
         {neckData.map((curNeck, i) => {
           return (
             <div key={i}>
@@ -275,7 +275,7 @@ const Filter = () => {
         Face
         </AccordionHeader>
         <AccordionBody>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='clearForm'>
         {faceData.map((curFace, i) => {
           return (
             <div key={i}>
@@ -303,7 +303,7 @@ const Filter = () => {
         Eyes
         </AccordionHeader>
         <AccordionBody>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='clearForm'>
         {eyesData.map((curEyes, i) => {
           return (
             <div key={i}>
@@ -331,7 +331,7 @@ const Filter = () => {
       Ears
         </AccordionHeader>
         <AccordionBody>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='clearForm'>
         {earsData.map((curEars, i) => {
           return (
             <div key={i}>
@@ -359,7 +359,7 @@ const Filter = () => {
         Mouth
         </AccordionHeader>
         <AccordionBody>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='clearForm'>
         {mouthData.map((curMouth, i) => {
           return (
             <div key={i}>
@@ -387,7 +387,7 @@ const Filter = () => {
         Background
         </AccordionHeader>
         <AccordionBody>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='clearForm'>
         {backgroundData.map((curBackground, i) => {
           return (
             <div key={i}>

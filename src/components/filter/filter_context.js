@@ -5,6 +5,7 @@ import GalleryCardData from "../galleryCard/galleryCardData";
 const FilterContext = createContext();
 
 const initialState = {
+  page: "home",
   filter_data: [],
   all_data: GalleryCardData,
   filters: {
@@ -26,6 +27,11 @@ const initialState = {
 export const FilterContextProvider = ({ children }) => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  // handle page 
+  const handlePage = (page)=>{
+    return dispatch({type: "HANDLE_PAGE", payload: page});
+  }
   
 
   // update the filter values
@@ -45,6 +51,7 @@ export const FilterContextProvider = ({ children }) => {
   // to clear the filter
   const clearFilters = (event) => {   
     dispatch({ type: "CLEAR_FILTERS" });
+    document.getElementsByClassName("clearForm").reset();
   };
   
   
@@ -61,6 +68,7 @@ export const FilterContextProvider = ({ children }) => {
     <FilterContext.Provider
       value={{
         ...state,
+        handlePage,
         updateFilterValue,
         updateCheckedFilterValue,
         clearFilters,

@@ -2,12 +2,12 @@ import React from "react";
 
 const SocialIcon = () => {
   return (
-    <div className="flex justify-between item-start gap-6 p-0 social__icon">
+    <div className="flex justify-between item-between gap-8 p-0 social__icon">
       <div>
         <a href="/">
           <svg
             width="20"
-            height="17"
+            height="20"
             viewBox="0 0 20 17"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ const SocialIcon = () => {
         <a href="/">
           <svg
             width="20"
-            height="16"
+            height="20"
             viewBox="0 0 20 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -39,8 +39,8 @@ const SocialIcon = () => {
        
         <a href="/">
           <svg
-            width="24"
-            height="25"
+            width="20"
+            height="20"
             viewBox="0 0 24 25"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ const SocialIcon = () => {
        
           <svg
             width="20"
-            height="21"
+            height="20"
             viewBox="0 0 20 21"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

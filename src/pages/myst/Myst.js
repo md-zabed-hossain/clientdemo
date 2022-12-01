@@ -1,5 +1,5 @@
-import React from "react";
-import { Footer } from "../../components";
+import React, { useEffect } from "react";
+
 import { BsArrowLeft } from "react-icons/bs";
 import "./myst.css";
 import { Link } from "react-router-dom";
@@ -9,8 +9,14 @@ import myst3 from "../../assets/myst3.png";
 import myst4 from "../../assets/myst4.png";
 import myst5 from "../../assets/myst5.png";
 import myst6 from "../../assets/myst6.png";
+import { useFilterContext } from "../../components/filter/filter_context";
 
 const Myst = () => {
+  const {handlePage} = useFilterContext();
+  useEffect(() => {
+  handlePage('myst')
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   return (
     <>
       <div className="myst">
@@ -59,10 +65,7 @@ const Myst = () => {
             <img src={myst5} alt="" />
           </div>
         </div>
-      </div>
-      <div>
-        <Footer />
-      </div>
+      </div>    
     </>
   );
 };

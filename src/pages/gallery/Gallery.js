@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Filter, GalleryCard } from "../../components";
-// import { useFilterContext} from "../../components/filter/filter_context"
+import { useFilterContext} from "../../components/filter/filter_context"
 
 import "./gallery.css";
 
 const Gallery = () => {
+  const {handlePage} = useFilterContext();
+  useEffect(() => {
+  handlePage('gallery')
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   return (
     <>
       <div className="gallery ">

@@ -1,7 +1,14 @@
-import React from "react";
-import { Footer, Header, Heading, ExploreSec, WallSec } from "../components";
+import React, { useEffect } from "react";
+import { Header, Heading, ExploreSec, WallSec } from "../components";
+import { useFilterContext } from "../components/filter/filter_context";
 
 const Home = () => {
+  const {handlePage} = useFilterContext();
+  useEffect(() => {
+  handlePage('home')
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  
   return (
     <>
       <div>
@@ -15,10 +22,7 @@ const Home = () => {
       </div>
       <div>
         <WallSec />
-      </div>
-      <div>
-        <Footer />
-      </div>
+      </div>    
     </>
   );
 };

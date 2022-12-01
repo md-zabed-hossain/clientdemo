@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import { Footer, Header, Heading, ExploreSec, WallSec, LoreCard1, LoreCard2 } from "../components";
+import React, { useEffect} from 'react'
+import { Header, Heading, ExploreSec, WallSec, LoreCard1, LoreCard2 } from "../components";
+import { useFilterContext } from "../components/filter/filter_context";
 
 const Lore = () => {
-  const [page,setPage] = useState(null);
+  const {handlePage,page} = useFilterContext();
   useEffect(() => {
-    setPage("lore")
+  handlePage('lore')
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-  
+ 
   return (
     <>
     <div>
@@ -26,10 +28,7 @@ const Lore = () => {
     </div>
     <div>
       <WallSec page={page} />
-    </div>
-    <div>
-      <Footer />
-    </div>
+    </div>   
   </>
   )
 }

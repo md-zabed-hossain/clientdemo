@@ -85,8 +85,8 @@ const ExploreSec = (page) => {
               </Link>
             </div>
           </div>
-          <div className="flex explore__card">
-            <Marquee gradient={false} pauseOnHover="true">
+          <div className="flex explore__card overflow-hidden">
+            <Marquee gradient={false} pauseOnHover="true" className="overflow-hidden">
               {expCardData.map((item, index) => {
                 return (
                   <img

@@ -1,15 +1,15 @@
 .navbar {
   color: #fff;
-  background: rgba(255,255,255,0.1);
+  /* background: rgba(255,255,255,0.1); */
   width: 100vw;
-  z-index: 100;
+  height: auto;
   position: fixed;
+  top:0;
+  left:0;
+  z-index: 1000;
   border: none;
 }
 ul > a {
-  width: 35px;
-  height: 24px;
-
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 400;
@@ -19,15 +19,9 @@ ul > a {
   z-index: 100;
 }
 .main__nav {
-  position: absolute;
-  
-  width: 400px;
   height: auto;
 }
 .logo__nav {
-  width: 30px;
-  height: 30px;
- 
   border: none;
   outline: none;
   cursor: pointer;
