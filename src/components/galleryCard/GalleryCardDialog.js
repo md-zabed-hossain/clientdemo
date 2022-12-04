@@ -43,7 +43,7 @@ const GalleryCardDialog = (props) => {
         unmount: { scale: 0.9, bottom: 200 },
       }}
      
-      className="bg-white object-bottom relative ease-in "
+      className="bg-white object-bottom  ease-in "
     >
       {dialogData}
     

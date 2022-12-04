@@ -16,7 +16,7 @@ const Header = (page) => {
       <div className=" flex  justify-center">
         {page.page === "lore" ? (
           <div className="flex w-[100vw] flex-col items-center main p-0 gap-8">
-            <h2 className="w-full text-[8vw] font-Anton font-[400] tracking-[-0.02em] text-white
+            <h2 className="w-full text-[9vw] font-anton font-[400] tracking-[-0.02em] text-white
             text-center uppercase">Explore the Myst</h2>
           </div>
         ) : (

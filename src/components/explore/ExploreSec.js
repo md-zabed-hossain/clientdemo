@@ -67,29 +67,32 @@ const ExploreSec = (page) => {
         <img src={home2} alt="" className="img" />
       )}
       {page.page === "lore" ? (
-        <h2>Welcome to the island.</h2>
+        <h2 className="exp__lore-title w-full text-[9vw] font-anton font-[400] tracking-[-0.02em] text-white
+            text-center uppercase">Welcome to the island.</h2>
       ) : (
-        <div className="flex flex-col">
-          <div className="flex explore__text-top">
+        <div className="explore__main flex flex-col">
+          <div className="flex  explore__text-top ">
             <div className="explore__text-h">
-              <h2>Explore the Soul of South East Asia</h2>
+              <h3 className=" text-[4vw] font-anton font-[400]  text-white
+            text-start uppercase leading-[100%] exp__home-title">Explore the Soul of South East Asia</h3>
             </div>
-            <div className="explore__text-p gap-10">
-              <p>
+            <div className="flex mt-4 flex-col  justify-start items-start explore__text-p">
+              <p className="text-start exp__text font-SpaceMono">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                 facilisi mauris venenatis est auctor eu. Tellus diam eu ac, nec
                 tortor porta lobortis aliquet. Ultrices lorem gravida ut lorem.
               </p>
-              <Link to={"/gallery"} className="mt-50">
+              <Link to={"/gallery"} className="mt-50 exp__btn">
                 Browse Collection
               </Link>
             </div>
           </div>
-          <div className="flex explore__card overflow-hidden">
-            <Marquee gradient={false} pauseOnHover="true" className="overflow-hidden">
+          <div className="flex explore__card ">
+            <Marquee gradient={false} pauseOnHover="true" className="">
               {expCardData.map((item, index) => {
                 return (
                   <img
+
                     src={item.image}
                     alt=""
                     key={index}

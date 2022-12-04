@@ -1,7 +1,7 @@
-.footer{
-    width: 100vw;
-height: 216px;
-
-background: #000000;
-color: #fff;
+.footer {
+  width: 100vw;
+  height: auto;
+  padding: 100px;
+  background: #000000;
+  color: #fff;
 }

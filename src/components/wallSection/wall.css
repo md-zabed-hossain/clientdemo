@@ -3,88 +3,126 @@
   width: 100vw;
   height: auto;
 }
-.img {
+.wall__img {
   position: relative;
   width: 100vw;
   height: auto;
 }
-.wall__text-top1 {
+.wall__lore-img {
+  position: relative;
+}
+.wall__lore-title {
   position: absolute;
-  width: 416px;
-  height: 198px;
-  padding: 56px 48px 44px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.wall__text-top1 {
   left: 25%;
-  gap: 20px;
-  top: 100px; 
-  
+  top: 8%;
 }
 .wall__text-top2 {
-  position: absolute;
-  width: 416px;
-  height: 198px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
   left: 55%;
-  top: 300px; 
-  
+  top: 15%;
 }
-.wall__card{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.wall__card {
   padding: 56px 48px 44px;
-  gap: 16px;  
+  gap: 16px;
   width: 416px;
   height: auto;
-
   background: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   border: 1px solid #222222;
   border-radius: 16px;
 }
-.wall__footer-heading {
-  position: relative;
-  width: 100vw;
-  background-color: #000;
-  height: 560px;
+
+.wall__footer-btn {
+   width: 133px;
+  height: 56px;
+  padding: 16px 32px;
+  cursor: pointer;
+  background: #ff4143;
+  border-radius: 80px;
 }
-.wall__footer-heading > h2 {
-  position: absolute;
-  width: 879px;
-  height: 142px;
-  left: 281px;
-  top: 209px;
 
-  font-family: "Anton";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 100px;
-  line-height: 100%;
 
-  text-align: center;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-
-  color: #ffffff;
+@media screen and (max-width:481px) {
+  .wall__text-top1 {
+    left: 20%;
+    top: 6%;
+  }
+  .wall__card {
+    padding: 20px;
+    gap: 10px;
+    width: 220px;
+    height: auto;
+  } 
+  .wall__card-text{
+    font-size: 8px
+  }
 }
-.wall__footer-heading >a{
-padding: 16px 32px;
-margin-top: 60px;
 
-position: absolute;
-width: 133px;
-height: 56px;
-left: 654px;
-top: 379px;
-cursor: pointer;
 
-background: #FF4143;
-border-radius: 80px;
+@media screen and (min-width:481px) and (max-width:768px){
+  .wall__text-top1 {
+    left: 24%;
+    top: 4%;
+  }
+  .wall__card {
+    padding: 25px;
+    gap: 10px;
+    width: 270px;
+    height: auto;
+  } 
+  .wall__card-text{
+    font-size: 10px
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  .wall__text-top1 {
+    left: 13%;
+    top: 4%;
+    
+  }
+  .wall__text-top2 {
+    left: 53%;
+    top: 10%;
+  }
+  .wall__card {
+    padding: 25px;
+    gap: 10px;
+    width: 270px;
+    height: auto;
+  } 
+  .wall__card-title{
+    font-size: 3vw
+  }
+  .wall__card-text{
+    font-size: 10px
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1500px){
+  .wall__text-top1 {
+    left: 20%;
+    top: 4%;
+    
+  }
+  .wall__text-top2 {
+    left: 55%;
+    top: 10%;
+  }
+  .wall__card {
+    padding: 40px;
+    gap: 10px;
+    width: 350px;
+    height: auto;
+  } 
+  .wall__card-title{
+    font-size: 3vw
+  }
+  .wall__card-text{
+    font-size: 12px
+  }
 }

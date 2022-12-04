@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialIcon = () => {
   return (
-    <div className="flex justify-between item-between gap-8 p-0 social__icon">
+    <div className="flex justify-between items-baseline gap-8 p-0 social__icon">
       <div>
         <a href="/">
           <svg

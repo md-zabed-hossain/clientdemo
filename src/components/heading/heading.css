@@ -1,89 +1,119 @@
 .heading {
   position: relative;
-  height: 658px;
   width: 100vw;
+  height: 658px;
   background: #000000;
 }
 
-h1 {
+.head__home-title {
   position: absolute;
-  width: 849px;
-  height: 142px;
-  left: 20%;
-  top: 169px;
-
-  font-family: "Anton";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 100px;
-  line-height: 100%;
-
-  text-align: center;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .main__lore {
   position: absolute;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
-  width: 800px;
+  width: 100vw;
   height: auto;
-  left: 25%;
-  /* top: 50%; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   color: #ffffff;
 }
 .lore__heading {
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 32px;
+
+  width: 30vw;
+  height: 350px;
+}
+
+.lore__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px 32px;
   width: 416px;
-  height: 224px;
- 
+  height: 418px;
 }
-.lore__heading>h2{
+.txt {
   width: 352px;
-height: 224px;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
 
-font-family: 'Anton';
-font-style: normal;
-font-weight: 400;
-font-size: 56px;
-line-height: 100%;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 
-letter-spacing: -0.02em;
-text-transform: uppercase;
+  color: #ffffff;
 
-color: #FFFFFF;
-
-
-align-self: stretch;
-
+  text-align: justify;
 }
-.lore__text{
 
-width: 416px;
-height: auto;
+@media screen and (max-width: 650px) {
+  .heading {
+    height: 400px;
+  }
+  .main__lore {
+    flex-direction: column;
+  }
+  .lore__heading {
+    justify-content: center;
+    align-items: center;
+    padding: 0px 32px;
 
+    width: 80%;
+    height: auto;
+  }
+  h2 {
+    font-size: 2vw;
+  }
+  .lore__text {
+    padding: 0px 32px;
+    width: 416px;
+    height: auto;
+  }
+
+  .txt {
+    font-size: 10px !important;
+    margin: 5px;
+    padding: 5px;
+  }
 }
-.lore__text>p{
-  
-width: 352px;
-height: auto;
-margin: 10px;
-padding: 10px;
+@media screen and (max-width: 450px) {
+  .heading {
+    height: 300px;
+  }
+  .txt {
+    font-size: 8px !important;
+    margin: 2px;
+    padding: 2px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .lore__text {
+    padding: 0px 20px;
+    width: 300px;
+    height: auto;
+  }
 
-font-family: 'Space Mono';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-/* line-height: 160%; */
-
-
-color: #FFFFFF;
-
-
-align-self: stretch;
-
+  .txt {
+    font-size: 7px !important;
+    width: auto;
+    text-align: justify;
+    margin: 5px;
+    padding: 5px;
+  }
 }
