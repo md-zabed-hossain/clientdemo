@@ -29,7 +29,7 @@ const NavBar = () => {
             style={({ isActive }) =>
               isActive ? activeStyle : undefined
             }
-            className="flex items-center capitalize"
+            className="flex items-center capitalize font-SpaceMono"
           >
             {menu}
           </NavLink>

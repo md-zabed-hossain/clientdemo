@@ -5,3 +5,20 @@
   background: #000000;
   color: #fff;
 }
+
+.footer__text{
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  .footer__text{
+    font-size: 10px;
+ }
+
+}
