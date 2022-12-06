@@ -4,47 +4,151 @@
   height: auto;
   background: black;
 }
+
 .lore__card1-top {
-  width: 848px;
-  height: 56px;
-  color: white;
+  width: 849px;
+  height: auto;
 }
-.lore__card1-top_head>h3 {
-  width: 600px;
-  height: 56px;
 
-  font-family: "Anton";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 100%;
-
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-.lore__card1-top_head>a {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+.lore__card1-btn {
   padding: 16px 32px;
-  gap: 10px;
-
-  width: 167px;
+  width: 200px;
   height: 56px;
-
-  background: #ff4143;
   border-radius: 80px;
+  text-align: center;
+  background: #ff4143;
+  color: #ffffff;
 }
 .lore__card1-body {
   width: 849px;
-  height: 500px;
-  color: white;
+  height: auto; 
+}
+.card1 {
+  gap: 24px;
+  width: 221px;
+  height: auto;
 }
 .lore__card1-img {
-  width: 221px;
-  height: 221px;
-
+  width: 100%;
+  height: auto;
   border-radius: 12px;
+}
+.card1__lore-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+@media screen and (max-width:481px) {
+  .lore__card1-top {
+    flex-direction: column;
+    width: 500px;
+    gap: 0;
+  }
+  .lore__card1-top-title{
+    font-size:30px;
+    width: 100%;   
+    text-align: center; 
+  }
+  .lore__card1-btn {
+    padding: 16px 32px;
+    width: 150px;
+    height: 45px;
+    border-radius: 40px;
+    font-size: 12px;
+   
+  }
+  .lore__card1-body{
+    flex-direction: column;
+    width: 500px;
+    gap: 50px
+  }
+  .card1 {
+    gap: 24px;
+    width: 150px;
+    height: auto;
+  }
+  .card1__lore-title{
+    font-size: 4vw
+  }
+  .card1__lore-text {
+font-size: 10px;
+  }
+
+}
+
+
+@media screen and (min-width:481px) and (max-width:768px){
+  .lore__card1-top {
+    flex-direction: column;
+    width: 700px;
+    gap: 20px;
+  }
+  .lore__card1-top-title{
+    width: 100%;
+    text-align: center;    
+    font-size:45px;
+  }
+  .lore__card1-btn {
+    padding: 16px 32px;
+    width: 150px;
+    height: 45px;
+    border-radius: 40px;
+    font-size: 12px;
+   
+  }
+  .lore__card1-body{
+    flex-direction: column;
+    width: 700px;
+    gap: 50px
+  }
+  .card1 {
+    gap: 24px;
+    width: 190px;
+    height: auto;
+  }
+  .card1__lore-title{
+    font-size: 4vw
+  }
+  .card1__lore-text {
+font-size: 12px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  .lore__card1-top {
+   
+    width: 700px;
+    gap: 20px;
+  }
+  .lore__card1-top-title{
+    font-size:45px;
+  }
+  .lore__card1-btn {
+    padding: 16px 32px;
+    width: 150px;
+    height: 45px;
+    border-radius: 40px;
+    font-size: 12px;
+   
+  }
+  .lore__card1-body{
+  
+    width: 700px;
+    gap: 20px;
+  }
+  .card1 {
+    gap: 24px;
+    width: 195px;
+    height: auto;
+  }
+  .card1__lore-title{
+    font-size: 3vw
+  }
+  .card1__lore-text {
+font-size: 12px;
+  }
+
 }

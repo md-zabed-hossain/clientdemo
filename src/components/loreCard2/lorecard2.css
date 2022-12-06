@@ -5,46 +5,101 @@
   background: black;
 }
 .lore__card2-top {
-  width: 848px;
-  height: 56px;
+  width: 65%;
+  height: auto;
   color: white;
 }
-.lore__card2-top_head>h3 {
-  width: 600px;
-  height: 56px;
 
-  font-family: "Anton";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 100%;
-
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-.lore__card2-top_head>a {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 16px 32px;
-  gap: 10px;
-
-  width: 167px;
-  height: 56px;
-
-  background: #ff4143;
-  border-radius: 80px;
-}
 .lore__card2-body {
-  width: 849px;
-  height: 500px;
+  width: 80%;
+  height: auto;
   color: white;
+}
+.card2 {
+  width: 200px;
+  height: auto;
 }
 .lore__card2-img {
-  width: 221px;
-  height: 221px;
+  width: 100%;
+  height: auto;
+}
+.card2__lore-text {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #ffffff;
+}
 
-  border-radius: 12px;
+@media screen and (max-width: 481px) {
+  .lore__card2-top-title {
+    font-size: 30px;
+  }
+
+  .lore__card2-body {
+    flex-direction: column;
+    width: 500px;
+    gap: 50px;
+  }
+  .lore__card2-body-title {
+    font-size: 30px;
+  }
+  .card1 {
+    gap: 20px;
+    width: 150px;
+    height: auto;
+  }
+
+  .card2__lore-text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .lore__card2-top-title {
+    font-size: 30px;
+  }
+
+  .lore__card2-body {
+    flex-direction: column;
+    width: 500px;
+    gap: 50px;
+  }
+  .lore__card2-body-title {
+    font-size: 30px;
+  }
+  .card1 {
+    gap: 20px;
+    width: 150px;
+    height: auto;
+  }
+
+  .card2__lore-text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .lore__card2-top-title {
+    font-size: 30px;
+  }
+
+  .lore__card2-body {
+    /* flex-direction: column; */
+    width: 100%;
+    gap: 50px;
+  }
+  .lore__card2-body-title {
+    font-size: 18px;
+  }
+  .card1 {
+    gap: 20px;
+    width: 200px;
+    height: auto;
+  }
+
+  .card2__lore-text {
+    font-size: 10px;
+  }
 }
