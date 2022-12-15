@@ -1,0 +1,89 @@
+.filter__btn-clear {
+  width: 37px;
+  height: 19px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: right;
+  color: #ffffff;
+}
+.filter__top {
+  padding: 10px 0px;
+  width: 280px;
+  height: auto;
+  border-bottom: 1px solid #444444;
+}
+.filter__text {
+  padding: 10px 0px;
+  width: 280px;
+  height: auto;
+  border-bottom: 1px solid #444444;
+}
+.filter__text-icon {
+  width: 24px;
+  height: 24px;
+}
+.filter__text-inp {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #888888;
+}
+.filter__acc {
+  padding: 10px 0px;
+  width: 280px;
+  height: auto;
+  border-bottom: 1px solid #444444;
+}
+.filter__accHead-icon {
+  width: 24px;
+  height: 24px;
+}
+.filter__accHead-title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+.filter__accBody {
+  padding: 12px 16px; 
+  width: 248px;
+  height: auto;
+}
+
+.filter__accBody-title {
+  width: 100%;
+  font-family: "Space Mono";
+  font-style: normal;
+  text-align: start;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #888888;
+  border-bottom: 1px solid #444444;
+}
+.filter__accBody-checkBox{  
+  width: 16px;
+  height: 16px;
+  margin: 4px 0px;
+}
+.filter__accBody-checkBox:checked  { 
+  accent-color: #ff4143;
+}
+.filter__accBody-lvl{
+ font-family: 'Space Mono';
+font-style: normal;
+text-transform: capitalize;
+font-weight: 400;
+font-size: 12px;
+line-height: 160%;
+color: #FFFFFF;
+}
+

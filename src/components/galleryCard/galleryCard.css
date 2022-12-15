@@ -1,4 +1,11 @@
-.gallery{
+.gallery__card{ 
+    width: 221px;
+    height: auto;    
     background-color:black;
     color: #fff;
+}
+.gallery__card-img{
+width: 100%;
+height: auto;
+border-radius: 12px;
 }

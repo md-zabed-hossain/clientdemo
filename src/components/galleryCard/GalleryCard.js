@@ -5,7 +5,7 @@ import './galleryCard.css'
 
 const GalleryCard = () => {
   return (
-    <div className="flex   m-20 gap-5">
+    <div className="flex mt-20 gap-5">
         <CardUI/>
     </div>
   )

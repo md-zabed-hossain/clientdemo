@@ -51,7 +51,18 @@ export const FilterContextProvider = ({ children }) => {
   // to clear the filter
   const clearFilters = (event) => {   
     dispatch({ type: "CLEAR_FILTERS" });
-    document.getElementsByClassName("clearForm").reset();
+    document.getElementById("clearForm1").reset();
+    document.getElementById("clearForm2").reset();
+    document.getElementById("clearForm3").reset();
+    document.getElementById("clearForm4").reset();
+    document.getElementById("clearForm5").reset();
+    document.getElementById("clearForm6").reset();
+    document.getElementById("clearForm7").reset();
+    document.getElementById("clearForm8").reset();
+    document.getElementById("clearForm9").reset();
+    document.getElementById("clearForm10").reset();
+    document.getElementById("clearForm11").reset();
+    document.getElementById("clearForm12").reset();    
   };
   
   

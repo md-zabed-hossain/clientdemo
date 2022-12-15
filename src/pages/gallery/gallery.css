@@ -1,6 +1,38 @@
-.gallery{
-    position: relative;
-    width: 100vw;
-    height: auto;
-    background: black;
+.gallery {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+}
+.gallery__main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: black;
+}
+.gallery__left {
+  /* position: fixed; */
+  width: 20%;
+  height: 100vh;
+  align-content: center; 
+}
+.gallery__right {
+  /* position: absolute; */
+  width: 80%;
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.gallery__btn {
+  padding: 16px 32px;
+  gap: 10px;
+  width: 176px;
+  height: 56px;
+  text-align: center;
+  color: white;
+  background: #ff4143;
+  border-radius: 80px;
+  align-self: flex-end;
 }

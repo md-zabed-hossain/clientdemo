@@ -3,9 +3,7 @@ import { Button, Dialog } from "@material-tailwind/react";
 import GalleryCardData from "./galleryCardData.js";
 
 
-const GalleryCardDialog = (props) => {
-  // const [open, setOpen] = useState(props.open);
-  // const handleOpen1 = () => setOpen(!open);
+const GalleryCardDialog = (props) => { 
 
   for (var x = 0; x < GalleryCardData.length; x++) {
     if (props.id === GalleryCardData[x].id) {
@@ -39,11 +37,12 @@ const GalleryCardDialog = (props) => {
     <Dialog
       {...props}
       animate={{
-        mount: { scale: 1, bottom: -200 ,},
-        unmount: { scale: 0.9, bottom: 200 },
+        mount: { scale: 1, bottom: -400,},
+        unmount: { scale: 0.9, y: -200 },
       }}
-     
-      className="bg-white object-bottom  ease-in "
+      
+     size={"sm"}
+      className="bg-white object-center backdrop-opacity-40 ease-in "
     >
       {dialogData}
     
