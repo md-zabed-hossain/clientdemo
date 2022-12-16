@@ -5,6 +5,7 @@ import GalleryCardData from "../galleryCard/galleryCardData";
 const FilterContext = createContext();
 
 const initialState = {
+  modal_open: false,
   page: "home",
   filter_data: [],
   all_data: GalleryCardData,
@@ -47,6 +48,11 @@ export const FilterContextProvider = ({ children }) => {
 
     return dispatch({ type: "UPDATE_CHECKED_FILTERS_VALUE", payload: { name,value,checked }});
   };
+
+     // handleModal
+ const handleModal = (modal) => {
+  return dispatch({ type: "HANDLE_MODAL", payload: modal});
+};
   
   // to clear the filter
   const clearFilters = (event) => {   
@@ -80,6 +86,7 @@ export const FilterContextProvider = ({ children }) => {
       value={{
         ...state,
         handlePage,
+        handleModal,
         updateFilterValue,
         updateCheckedFilterValue,
         clearFilters,

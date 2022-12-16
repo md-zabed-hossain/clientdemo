@@ -37,12 +37,12 @@ const GalleryCardDialog = (props) => {
     <Dialog
       {...props}
       animate={{
-        mount: { scale: 1, bottom: -400,},
+        mount: { scale: 1, y: 0,},
         unmount: { scale: 0.9, y: -200 },
       }}
       
      size={"sm"}
-      className="bg-white object-center backdrop-opacity-40 ease-in "
+      className="bg-white object-center backdrop-opacity-40 ease-in  "
     >
       {dialogData}
     

@@ -6,6 +6,15 @@ const filterReducer = (state, action) => {
         ...state,
         page : page
       };
+
+      case "HANDLE_MODAL":
+      const modal = action.payload;
+      return{
+        ...state,
+        modal_open : modal
+      };
+
+      
     case "LOAD_FILTER_DATA":
       return {
         ...state,

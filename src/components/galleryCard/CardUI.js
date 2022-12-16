@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 import "./galleryCard.css";
 import GalleryCardData from "./galleryCardData.js";
-// import {  Card } from "@material-tailwind/react";
-import GalleryCardDialog from "./GalleryCardDialog";
 import { useFilterContext } from "../filter/filter_context";
+import Modal from "../modal/Modal";
 
-const CardUI = () => {
-  const [open, setOpen] = useState(false);
-  const { filter_data } = useFilterContext();
-
-  const handleOpen = () => setOpen(!open);
+const CardUI = () => {  
+  const { filter_data, handleModal } = useFilterContext(); 
   const [id, setID] = useState("");
 
   return (
@@ -22,7 +18,7 @@ const CardUI = () => {
               <div
                 className="cursor-pointer gallery__card "
                 onClick={() => {
-                  setOpen(true);
+                  handleModal(true);                 
                   setID(item.id);
                 }}
               >
@@ -33,8 +29,7 @@ const CardUI = () => {
                 <h4 className="gallery__card-title w-full text-[2vw] font-anton font-[400] tracking-[-0.02em] leading-[100%]  text-white uppercase">
                   NO. {item.id}
                 </h4>
-              </div>
-              <GalleryCardDialog open={open} handler={handleOpen} id={id} />
+              </div>              
             </div>
           ))
         : GalleryCardData.map((item, index) => (
@@ -42,7 +37,7 @@ const CardUI = () => {
               <div
                 className="cursor-pointer gallery__card flex flex-col gap-5"
                 onClick={() => {
-                  setOpen(true);
+                  handleModal(true);                  
                   setID(item.id);
                 }}
               >
@@ -53,10 +48,10 @@ const CardUI = () => {
                 <h4 className="gallery__card-title w-full text-[2vw] font-anton font-[400] tracking-[-0.02em] leading-[100%]  text-white uppercase">
                   NO. {item.id}
                 </h4>
-              </div>
-              <GalleryCardDialog open={open} handler={handleOpen} id={id} />
+              </div>              
             </div>
           ))}
+              <Modal id={id}/>
     </div>
   );
 };
